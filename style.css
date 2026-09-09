@@ -1,0 +1,69 @@
+:root {
+  color-scheme: light dark;
+  --bg: #fbfaf8;
+  --fg: #1c1a17;
+  --muted: #6b655d;
+  --line: #e2ddd4;
+  --card: #ffffff;
+  --accent: #1f6f5c;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141613;
+    --fg: #ececea;
+    --muted: #9a958c;
+    --line: #2c302b;
+    --card: #1b1e1a;
+    --accent: #6fbfa5;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 44rem; margin: 0 auto; padding: 4rem 1.5rem 5rem; }
+header { margin-bottom: 3.5rem; }
+h1 { font-size: 1.5rem; letter-spacing: -0.01em; margin: 0 0 0.3rem; }
+header p { color: var(--muted); margin: 0; }
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 1.75rem;
+}
+.card h2 { font-size: 1.25rem; margin: 0 0 0.15rem; }
+.tagline { color: var(--muted); margin: 0 0 1.4rem; }
+ul { margin: 0 0 1.75rem; padding-left: 1.1rem; }
+li { margin-bottom: 0.5rem; }
+li::marker { color: var(--accent); }
+.links { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.links a {
+  display: inline-block;
+  padding: 0.5rem 0.95rem;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  text-decoration: none;
+  color: var(--fg);
+  font-size: 0.9rem;
+}
+.links a.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+@media (prefers-color-scheme: dark) { .links a.primary { color: #10221c; } }
+.links a:hover { border-color: var(--accent); }
+footer {
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+footer a { color: var(--muted); }
+article h1 { font-size: 1.6rem; margin-bottom: 0.25rem; }
+article h2 { font-size: 1.1rem; margin: 2rem 0 0.5rem; }
+article h3 { font-size: 0.98rem; margin: 1.5rem 0 0.4rem; }
+article .updated { color: var(--muted); font-size: 0.9rem; margin-bottom: 2.5rem; }
+article a { color: var(--accent); }
+.back { display: inline-block; margin-bottom: 2rem; color: var(--muted); font-size: 0.9rem; }
