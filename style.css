@@ -67,3 +67,22 @@ article h3 { font-size: 0.98rem; margin: 1.5rem 0 0.4rem; }
 article .updated { color: var(--muted); font-size: 0.9rem; margin-bottom: 2.5rem; }
 article a { color: var(--accent); }
 .back { display: inline-block; margin-bottom: 2rem; color: var(--muted); font-size: 0.9rem; }
+
+/* QR blocks on apps.html. The codes are always black-on-white, including in dark mode: a
+   scanner expects dark modules on a light ground, and inverting them makes some phones fail.
+   So the tile stays white and gets a border in dark mode to keep it from glaring. */
+.qrs { display: flex; flex-wrap: wrap; gap: 1.25rem; margin: 0 0 1.5rem; }
+.qr { margin: 0; text-align: center; }
+.qr img {
+  display: block;
+  width: 160px;
+  height: 160px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0.5rem;
+  image-rendering: pixelated;   /* keep module edges crisp when scaled */
+}
+.qr figcaption { color: var(--muted); font-size: 0.85rem; margin-top: 0.4rem; }
+.note { color: var(--muted); font-size: 0.875rem; margin: 1rem 0 0; }
+.note a { color: var(--accent); }
