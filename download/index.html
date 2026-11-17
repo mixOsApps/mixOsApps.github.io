@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MixZen apps: downloads</title>
+<meta name="description" content="Download MixZen apps for Android and Windows. The apps outside Google Play update themselves.">
+<link rel="icon" href="icons/adblocker.png">
+<style>
+:root{color-scheme:light dark;--bg:#fbfaf8;--card:#fff;--fg:#1c1a17;--muted:#6b655d;--line:#e2ddd4;--accent:#1f6f5c;--on-accent:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141613;--card:#1b1e1a;--fg:#ececea;--muted:#9a958c;--line:#2c302b;--accent:#6fbfa5;--on-accent:#10221c}}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+main,header,footer{max-width:1040px;margin:0 auto;padding-left:16px;padding-right:16px}
+header{padding-top:40px;padding-bottom:8px}
+h1{margin:0 0 4px;font-size:1.7rem;letter-spacing:-.01em}
+.sub{margin:0;color:var(--muted)}
+h2{margin:36px 0 14px;font-size:1.2rem}
+.grid{display:grid;grid-template-columns:1fr;gap:16px}
+@media (min-width:760px){.grid{grid-template-columns:1fr 1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;display:grid;grid-row:span 4;grid-template-rows:subgrid;row-gap:0;align-content:start;scroll-margin-top:16px;min-width:0}
+.play .card{grid-row:span 3}
+.more{display:flex;flex-direction:column}
+.card:target{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent)}
+.head{display:flex;gap:14px;align-items:center;margin-bottom:12px}
+.head img{width:64px;height:64px;border-radius:14px;flex:none}
+.head h3{margin:0;font-size:1.1rem}
+.desc{margin:0 0 14px;color:var(--muted)}
+.btns{display:flex;flex-direction:column;gap:10px}
+.btn{display:flex;align-items:center;justify-content:center;min-height:48px;padding:10px 16px;border-radius:12px;background:var(--accent);color:var(--on-accent);font-weight:700;text-decoration:none;text-align:center}
+.btn.quiet{background:transparent;color:var(--fg);border:1px solid var(--line);font-weight:600}
+.btn:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--fg);outline-offset:2px}
+.notes-link{align-self:flex-start;margin:10px 0 0;padding:6px 0;min-height:32px;background:none;border:0;font:inherit;font-size:.92rem;color:var(--muted);text-decoration:underline;cursor:pointer;text-align:left}
+.notes-link[hidden]{display:none}
+.notes-link:focus-visible{outline:3px solid var(--fg);outline-offset:2px}
+dialog{padding:0;border:1px solid var(--line);background:var(--card);color:var(--fg);width:calc(100% - 32px);max-width:520px;border-radius:14px;overflow:hidden}
+dialog::backdrop{background:rgba(0,0,0,.5)}
+.sheet{display:flex;flex-direction:column;max-height:80vh;padding:18px}
+.sheet h3{margin:0 0 10px;font-size:1.1rem}
+.sheet .notes{margin:0 0 14px;overflow:auto;white-space:pre-line;color:var(--muted);font-size:.95rem;overflow-wrap:anywhere;max-height:70vh;flex:1 1 auto}
+.sheet .handle{display:none;width:40px;height:4px;border-radius:2px;background:var(--line);margin:-6px auto 14px}
+@media (max-width:599px){
+dialog{width:100%;max-width:100%;margin:auto 0 0 0;border-radius:20px 20px 0 0;border-bottom:0}
+.sheet .handle{display:block}
+}
+body:has(dialog[open]){overflow:hidden}
+.extra{margin:12px 0 0;font-size:.9rem;color:var(--muted)}
+.how{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:6px 18px 12px}
+.how h3{margin:14px 0 6px;font-size:1rem}
+.how ol{margin:0;padding-left:1.3em}
+.how li{margin:5px 0}
+footer{margin-top:40px;padding-top:20px;padding-bottom:48px;color:var(--muted);font-size:.9rem}
+footer a{color:var(--muted)}
+</style>
+</head>
+<body>
+<header>
+<h1>MixZen apps</h1>
+<p class="sub">Apps by MixZen for Android and Windows. The apps outside Google Play update themselves.</p>
+</header>
+<main>
+
+<h2>Download</h2>
+<div class="grid">
+
+<section class="card" id="serio">
+<div class="head"><img src="icons/serio.svg" alt="" width="64" height="64"><h3>Serio</h3></div>
+<p class="desc">Movies and series tracker: browse, details, actors, watch progress. Syncs your watch history with Simkl.</p>
+<div class="btns"><a class="btn" data-app="serio" data-os="android" href="https://github.com/mixOsApps/serio-releases/releases/latest">Download for Android</a></div>
+<div class="more">
+<button type="button" class="notes-link" data-notes="serio" hidden></button>
+</div>
+</section>
+
+<section class="card" id="masroofi">
+<div class="head"><img src="icons/masroofi.svg" alt="" width="64" height="64"><h3>Masroofi</h3></div>
+<p class="desc">Personal finance app: wallets, bank SMS messages, transactions, savings, installments and reconciliation.</p>
+<div class="btns"><a class="btn" data-app="masroofi" data-os="android" href="https://github.com/mixOsApps/masroofi-releases/releases/latest">Download for Android</a></div>
+<div class="more">
+<button type="button" class="notes-link" data-notes="masroofi" hidden></button>
+</div>
+</section>
+
+<section class="card" id="adblocker">
+<div class="head"><img src="icons/adblocker.png" alt="" width="64" height="64"><h3>MixZen AdBlocker</h3></div>
+<p class="desc">Blocks ads and trackers in every app on your phone and on your Windows PC.</p>
+<div class="btns">
+<a class="btn" data-app="adblocker" data-os="android" href="https://github.com/mixOsApps/adblocker-releases/releases/latest">Download for Android</a>
+<!-- A Windows build for another app: add windowsFeed + windowsFallback to its APPS entry and copy this line into its card with data-app set to its id. -->
+<a class="btn" data-app="adblocker" data-os="windows" href="https://github.com/mixOsApps/adblocker-releases/releases">Download for Windows</a>
+</div>
+<div class="more">
+<p class="extra">On Android, accept the VPN permission on first start. On Windows, the first start asks for administrator permission once, so the app can switch your DNS.</p>
+<button type="button" class="notes-link" data-notes="adblocker" hidden></button>
+<button type="button" class="notes-link" data-notes="adblocker-windows" hidden></button>
+</div>
+</section>
+
+<section class="card" id="convert-and-download">
+<div class="head"><img src="icons/convert-and-download.svg" alt="" width="64" height="64"><h3>Convert &amp; Download</h3></div>
+<p class="desc">Converts video files and downloads videos from many sites, with a queue, history, and a browser that finds videos.</p>
+<div class="btns"><a class="btn" data-app="convert-and-download" data-os="android" href="https://github.com/mixOsApps/tstomp4converter-releases/releases/latest">Download for Android</a></div>
+<div class="more">
+<button type="button" class="notes-link" data-notes="convert-and-download" hidden></button>
+</div>
+</section>
+
+<section class="card" id="bplogger">
+<div class="head"><img src="icons/bplogger.png" alt="" width="64" height="64"><h3>BP Logger</h3></div>
+<p class="desc">Blood-pressure logger: readings, medications, trends, PDF and CSV export, Google Sheets sync and a home-screen widget.</p>
+<div class="btns"><a class="btn" data-app="bplogger" data-os="android" href="https://github.com/mixOsApps/bplogger-releases/releases/latest">Download for Android</a></div>
+<div class="more">
+<button type="button" class="notes-link" data-notes="bplogger" hidden></button>
+</div>
+</section>
+
+<section class="card" id="tajweed">
+<div class="head"><img src="icons/tajweed.png" alt="" width="64" height="64"><h3>Learn Tajweed Rules</h3></div>
+<p class="desc">Tajweed lessons, Qaida Nuraniyah, Quran audio by reciter, practice modes, quizzes and badges.</p>
+<div class="btns"><a class="btn" data-app="tajweed" data-os="android" href="https://github.com/mixOsApps/Tajweed.Rules/releases/latest">Download for Android</a></div>
+<div class="more">
+<button type="button" class="notes-link" data-notes="tajweed" hidden></button>
+</div>
+</section>
+
+<section class="card" id="clock-widget">
+<div class="head"><img src="icons/clock-widget.svg" alt="" width="64" height="64"><h3>Clock Widget App</h3></div>
+<p class="desc">Home-screen clock widget with prayer times, location and weather.</p>
+<div class="btns"><a class="btn" data-app="clock-widget" data-os="android" href="https://github.com/mixOsApps/clockwidget-releases/releases/latest">Download for Android</a></div>
+<div class="more">
+<button type="button" class="notes-link" data-notes="clock-widget" hidden></button>
+</div>
+</section>
+
+</div>
+
+<h2>On Google Play</h2>
+<div class="grid play">
+
+<section class="card" id="umrah">
+<div class="head"><img src="icons/umrah.png" alt="" width="64" height="64"><h3>Umrah Companion</h3></div>
+<p class="desc">A step-by-step guide through Umrah.</p>
+<div class="btns"><a class="btn" href="https://play.google.com/store/apps/details?id=com.umrahcompanion">Get it on Google Play</a></div>
+</section>
+
+<section class="card" id="salah">
+<div class="head"><img src="icons/salah.png" alt="" width="64" height="64"><h3>Salah App</h3></div>
+<p class="desc">A step-by-step prayer guide for new Muslims, with prayer times and Qibla direction.</p>
+<div class="btns">
+<a class="btn" href="https://play.google.com/store/apps/details?id=com.mixzen.salah">Get it on Google Play</a>
+<a class="btn quiet" href="/salah-app/">Web version</a>
+</div>
+</section>
+
+<section class="card" id="build-cost">
+<div class="head"><img src="icons/build-cost.svg" alt="" width="64" height="64"><h3>Build Cost Tracker</h3></div>
+<p class="desc">Tracks the costs of a building project.</p>
+<div class="btns"><a class="btn" href="https://play.google.com/store/apps/details?id=com.buildcost.tracker">Get it on Google Play</a></div>
+</section>
+
+</div>
+
+<h2>How to install</h2>
+<div class="how">
+<h3>Android</h3>
+<ol>
+<li>Tap <b>Download for Android</b> and wait for the file to finish.</li>
+<li>Open the downloaded file (find it in your notifications or the Downloads folder).</li>
+<li>If Android asks, allow <b>Install unknown apps</b> for your browser, then go back.</li>
+<li>Tap <b>Install</b> and open the app. Later versions arrive through the app's own update prompt.</li>
+</ol>
+<h3>Windows</h3>
+<ol>
+<li>Click <b>Download for Windows</b> and wait for the .msi file to finish.</li>
+<li>Double-click the file. If SmartScreen warns, choose <b>More info</b>, then <b>Run anyway</b>.</li>
+<li>To remove it, use <b>Settings &gt; Apps</b>.</li>
+</ol>
+</div>
+
+</main>
+<footer>
+<p><a href="/">Home</a> &middot; <a href="/apps.html">All apps with QR codes</a> &middot; <a href="/privacy.html">Privacy</a></p>
+</footer>
+
+<dialog id="notes-dialog" aria-labelledby="nd-title"><div class="sheet"><div class="handle" aria-hidden="true"></div><h3 id="nd-title"></h3><p class="notes" id="nd-body"></p><button type="button" class="btn" id="nd-close">Close</button></div></dialog>
+
+<script>
+(function () {
+  var RAW = "https://raw.githubusercontent.com/mixOsApps/";
+  // One entry per app. Without a feed (or when it fails) the buttons keep the releases/latest links written in the HTML.
+  // To add a Windows build to an app: add windowsFeed + windowsFallback here and a data-os="windows" button in its card.
+  var APPS = [
+    { id: "serio", name: "Serio", icon: "icons/serio.svg",
+      androidFeed: RAW + "serio-releases/main/version.json",
+      androidFallback: "https://github.com/mixOsApps/serio-releases/releases/latest" },
+    { id: "masroofi", name: "Masroofi", icon: "icons/masroofi.svg",
+      androidFeed: RAW + "masroofi-releases/main/version.json",
+      androidFallback: "https://github.com/mixOsApps/masroofi-releases/releases/latest" },
+    { id: "adblocker", name: "MixZen AdBlocker", icon: "icons/adblocker.png",
+      androidFeed: RAW + "adblocker-releases/main/version.json",
+      androidFallback: "https://github.com/mixOsApps/adblocker-releases/releases/latest",
+      windowsFeed: RAW + "adblocker-releases/main/desktop-version.json",
+      windowsFallback: "https://github.com/mixOsApps/adblocker-releases/releases" },
+    { id: "convert-and-download", name: "Convert & Download", icon: "icons/convert-and-download.svg",
+      androidFeed: RAW + "tstomp4converter-releases/main/version.json",
+      androidFallback: "https://github.com/mixOsApps/tstomp4converter-releases/releases/latest" },
+    { id: "bplogger", name: "BP Logger", icon: "icons/bplogger.png",
+      androidFeed: RAW + "bplogger-releases/main/version.json",
+      androidFallback: "https://github.com/mixOsApps/bplogger-releases/releases/latest" },
+    { id: "tajweed", name: "Learn Tajweed Rules", icon: "icons/tajweed.png",
+      androidFeed: RAW + "Tajweed.Rules/refs/heads/main/version.json",
+      androidFallback: "https://github.com/mixOsApps/Tajweed.Rules/releases/latest" },
+    { id: "clock-widget", name: "Clock Widget App", icon: "icons/clock-widget.svg",
+      androidFeed: RAW + "clockwidget-releases/main/version.json",
+      androidFallback: "https://github.com/mixOsApps/clockwidget-releases/releases/latest" }
+  ];
+
+  var dlg = document.getElementById("notes-dialog");
+  function openNotes(title, notes) {
+    document.getElementById("nd-title").textContent = title;
+    var body = document.getElementById("nd-body");
+    body.textContent = notes;
+    body.scrollTop = 0;
+    dlg.showModal();
+  }
+  dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
+  document.getElementById("nd-close").addEventListener("click", function () { dlg.close(); });
+
+  function fill(app, os, feed, fallback, urlKey, label, notesId, platform) {
+    var btn = document.querySelector('[data-app="' + app.id + '"][data-os="' + os + '"]');
+    var link = document.querySelector('[data-notes="' + notesId + '"]');
+    if (!btn) return;
+    btn.href = fallback;
+    if (!feed) return;
+    fetch(feed, { cache: "no-store" })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (j) {
+        var href = j[urlKey], ver = j.versionName;
+        if (!href || !ver || href.indexOf("https://") !== 0) throw new Error("bad feed");
+        btn.href = href;
+        btn.textContent = label + " (" + ver + ")";
+        var notes = String(j.releaseNotes || j.notes || "").trim();
+        if (notes && link) {
+          link.textContent = "What's new" + (platform ? " on " + platform : " in") + " " + ver;
+          link.onclick = function () { openNotes(app.name + " " + ver, notes); };
+          link.hidden = false;
+        }
+      })
+      .catch(function () { /* keep the fallback link, notes link stays hidden */ });
+  }
+  APPS.forEach(function (app) {
+    fill(app, "android", app.androidFeed, app.androidFallback, "apkUrl", "Download for Android", app.id, app.windowsFeed ? "Android" : "");
+    fill(app, "windows", app.windowsFeed, app.windowsFallback, "msiUrl", "Download for Windows", app.id + "-windows", "Windows");
+  });
+})();
+</script>
+</body>
+</html>
