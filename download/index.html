@@ -133,6 +133,15 @@ footer a{color:var(--muted)}
 </div>
 </section>
 
+<section class="card" id="calorie-tracker">
+<div class="head"><img src="icons/calorie-tracker.svg" alt="" width="64" height="64"><h3>Calorie Tracker</h3></div>
+<p class="desc">Calorie and health tracker: food with barcode scan, water, blood sugar, achievements and widgets.</p>
+<div class="btns"><a class="btn" data-app="calorie-tracker" data-os="android" href="https://github.com/mixOsApps/calorietracker-releases/releases/latest">Download for Android</a></div>
+<div class="more">
+<button type="button" class="notes-link" data-notes="calorie-tracker" hidden></button>
+</div>
+</section>
+
 </div>
 
 <h2>On Google Play</h2>
@@ -213,7 +222,10 @@ footer a{color:var(--muted)}
       androidFallback: "https://github.com/mixOsApps/Tajweed.Rules/releases/latest" },
     { id: "clock-widget", name: "Clock Widget App", icon: "icons/clock-widget.svg",
       androidFeed: RAW + "clockwidget-releases/main/version.json",
-      androidFallback: "https://github.com/mixOsApps/clockwidget-releases/releases/latest" }
+      androidFallback: "https://github.com/mixOsApps/clockwidget-releases/releases/latest" },
+    { id: "calorie-tracker", name: "Calorie Tracker", icon: "icons/calorie-tracker.svg",
+      androidFeed: RAW + "calorietracker-releases/main/version.json",
+      androidFallback: "https://github.com/mixOsApps/calorietracker-releases/releases/latest" }
   ];
 
   var dlg = document.getElementById("notes-dialog");
